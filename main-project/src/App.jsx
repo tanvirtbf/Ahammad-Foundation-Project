@@ -16,6 +16,7 @@ function App() {
         <About />
         <Title subTitle='Ahammad Foundation' title='Our Gallery' />
         <Campus />
+        <Title subTitle='Testimonials' title='What Student Says' />
       </div>
     </>
   );
