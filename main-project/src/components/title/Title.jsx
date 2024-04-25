@@ -1,10 +1,10 @@
 import styles from './Title.module.css'
 
-const Title = () => {
+const Title = ({subTitle, title}) => {
   return (
     <div className={styles.title}>
-      <p></p>
-      <h2></h2>
+      <p>{subTitle}</p>
+      <h2>{title}</h2>
     </div>
   )
 }
