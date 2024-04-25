@@ -7,9 +7,11 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Programs />
+      <div className="container">
+        <Programs />
+      </div>
     </>
-  )
+  );
 }
 
 export default App;
