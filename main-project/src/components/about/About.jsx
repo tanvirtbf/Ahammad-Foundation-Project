@@ -1,13 +1,13 @@
 import styles from './About.module.css'
 import about from '../../assets/about.jpg'
-import { FaPlayCircle } from "react-icons/fa";
+import imageIcon from '../../assets/play-icon.png'
 
 const About = () => {
   return (
     <div className={styles.about}>
       <div className={styles.aboutLeft}>
-        <img src={about} alt="" />
-        <FaPlayCircle className={styles.playIcon} />
+        <img src={about} alt="" className={styles.aboutImg}/>
+        <img src={imageIcon} alt="" className={styles.iconImage} />
       </div>
       <div className={styles.aboutRight}>
         <h3>About Foundation</h3>
