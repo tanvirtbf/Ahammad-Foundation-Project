@@ -34,3 +34,7 @@ a{
   justify-content: center;
   gap: 5px;
 }
+.btn.dark-btn{
+  background-color: #212EA0;
+  color: #fff;
+}

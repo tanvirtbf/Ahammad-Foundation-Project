@@ -1,4 +1,5 @@
 import About from "./components/about/About";
+import Campus from "./components/campus/Campus";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Programs from "./components/programs/Programs";
@@ -14,6 +15,7 @@ function App() {
         <Programs />
         <About />
         <Title subTitle='Ahammad Foundation' title='Our Gallery' />
+        <Campus />
       </div>
     </>
   );
