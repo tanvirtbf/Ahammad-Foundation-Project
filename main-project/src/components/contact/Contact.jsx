@@ -1,6 +1,8 @@
+import React from "react";
 import { FaAddressBook, FaLongArrowAltRight, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import styles from './Contact.module.css';
+
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -10,7 +12,7 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+    formData.append("access_key", "a197f4ce-a494-4a0e-a5c9-0b1e1e6ec823");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -22,10 +24,12 @@ const Contact = () => {
     if (data.success) {
       setResult("Form Submitted Successfully");
       event.target.reset();
+      event.target.reset();
     } else {
       console.log("Error", data);
       setResult(data.message);
     }
+  }
   return (
     <div className={styles.contact}>
       <div className={styles.contactCol}>
@@ -38,7 +42,7 @@ const Contact = () => {
         </ul>
       </div>
       <div className={styles.contactCol}>
-        <form>
+        <form onSubmit={onSubmit}>
           <label htmlFor="">Your Name</label>
           <input type="text" name='name' placeholder='Enter Your Name' required/>
           <label htmlFor="">Phone Number</label>
