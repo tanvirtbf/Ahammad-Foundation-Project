@@ -7,10 +7,16 @@ import user3 from '../../assets/user-3.png'
 import user4 from '../../assets/user-4.png'
 
 const Testimonials = () => {
+
+  const slideForward = () => {
+    
+  }
+  const slideBackward = () => {}
+
   return (
     <div className={styles.testimonials}>
-      <img src={nextIcon} alt="" className={styles.nextBtn}/>
-      <img src={backIcon} alt="" className={styles.backBtn}/>
+      <img src={nextIcon} alt="" className={styles.nextBtn} onClick={slideForward}/>
+      <img src={backIcon} alt="" className={styles.backBtn} onClick={slideBackward}/>
       <div className={styles.slider}>
         <ul>
           <li>
