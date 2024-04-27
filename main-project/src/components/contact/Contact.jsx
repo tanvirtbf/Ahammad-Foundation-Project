@@ -31,7 +31,7 @@ const Contact = () => {
     }
   }
   return (
-    <div className={styles.contact}>
+    <div className={styles.contact} id="contact">
       <div className={styles.contactCol}>
         <h3>Send us a Message <MdEmail style={{marginLeft: '10px', fontSize: '30px'}}/></h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum quia est dolores veniam consequuntur voluptatum neque, fugiat optio iure officia incidunt nesciunt, pariatur et debitis cumque quidem velit magni eaque vel delectus aliquam maiores quibusdam! Natus repellat iusto aperiam!</p>

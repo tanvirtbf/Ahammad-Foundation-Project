@@ -9,7 +9,7 @@ import { SiInteractiondesignfoundation } from "react-icons/si";
 
 const Programs = () => {
   return (
-    <div className={`${styles.programs}`}>
+    <div className={`${styles.programs}`} id='program'>
       <div className={styles.program}>
         <img src={program1} alt="" />
         <div className={styles.caption}>

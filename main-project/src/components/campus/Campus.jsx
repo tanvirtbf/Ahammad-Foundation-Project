@@ -8,7 +8,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Campus = () => {
   return (
-    <div className={styles.campus}>
+    <div className={styles.campus} id='campus'>
       <div className={styles.gallery}>
         <img src={gallery1} alt="" />
         <img src={gallery2} alt="" />

@@ -3,7 +3,7 @@ import styles from "./Hero.module.css";
 
 const Hero = () => {
   return (
-    <div className={`${styles.hero} container`}>
+    <div className={`${styles.hero} container`} id="hero">
       <div className={styles.heroText}>
         <h1>We Ensure better education for a better world</h1>
         <p>
