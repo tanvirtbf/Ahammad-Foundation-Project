@@ -1,5 +1,6 @@
 import About from "./components/about/About";
 import Campus from "./components/campus/Campus";
+import Contact from "./components/contact/Contact";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Programs from "./components/programs/Programs";
@@ -20,6 +21,7 @@ function App() {
         <Title subTitle='Testimonials' title='What Student Says' />
         <Testimonials />
         <Title subTitle='CONTACT US' title='Get in Touch' />
+        <Contact />
       </div>
     </>
   );
