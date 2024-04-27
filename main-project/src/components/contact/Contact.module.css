@@ -42,3 +42,22 @@
   font-size: 25px;
   margin-right: 7px;
 }
+.submitBtnIcon{
+  font-size: 23px;
+}
+.contact form input, .contact form textarea{
+  display: block;
+  width: 100%;
+  background-color: #EBECFE;
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  resize: none;
+  border-radius: 10px;
+}
+.contactCol span{
+  display: block;
+  margin: 20px 0;
+}
