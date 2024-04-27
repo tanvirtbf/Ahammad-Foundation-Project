@@ -1,10 +1,31 @@
-import styles from './Contact.module.css'
+import { FaAddressBook, FaLongArrowAltRight, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaAddressBook } from "react-icons/fa";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import styles from './Contact.module.css';
 
 const Contact = () => {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
   return (
     <div className={styles.contact}>
       <div className={styles.contactCol}>
@@ -26,7 +47,7 @@ const Contact = () => {
           <textarea name="message" rows="6" placeholder='Enter Your Message' required></textarea>
           <button type='submit' className={`btn dark-btn`}>Submit Now <FaLongArrowAltRight className={styles.submitBtnIcon}/></button>
         </form>
-        <span></span>
+        <span>{result}</span>
       </div>
     </div>
   )
