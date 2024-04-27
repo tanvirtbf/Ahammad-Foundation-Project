@@ -3,6 +3,7 @@ import Campus from "./components/campus/Campus";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Programs from "./components/programs/Programs";
+import Testimonials from "./components/testimonials/Testimonials";
 import Title from "./components/title/Title";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Title subTitle='Ahammad Foundation' title='Our Gallery' />
         <Campus />
         <Title subTitle='Testimonials' title='What Student Says' />
+        <Testimonials />
       </div>
     </>
   );
