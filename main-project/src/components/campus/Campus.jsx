@@ -14,6 +14,10 @@ const Campus = () => {
         <img src={gallery2} alt="" />
         <img src={gallery3} alt="" />
         <img src={gallery4} alt="" />
+        <img src={gallery1} alt="" />
+        <img src={gallery2} alt="" />
+        <img src={gallery3} alt="" />
+        <img src={gallery4} alt="" />
       </div>
       <button className="btn dark-btn">See More Here <FaLongArrowAltRight /></button>
     </div>
