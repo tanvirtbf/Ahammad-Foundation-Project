@@ -25,7 +25,10 @@ const Navbar = () => {
 
   return (
     <nav className={`container ${sticky ? styles.darkNav : ""}`}>
-      <img src={Logo} alt="" className={styles.logo} />
+      <h1 className={styles.logoName}>
+        <Link to="hero" smooth={true} offset={0} duration={500}>Ahammad Foundation</Link>
+      </h1>
+      {/* <img src={Logo} alt="" className={styles.logo} /> */}
       <ul className={`${mobileMenu? styles.hideMobileMenuSmooth : styles.hideMobileMenu} `}>
         <li>
           <Link to="hero" smooth={true} offset={0} duration={500} onClick={handleNavbar}>
