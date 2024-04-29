@@ -15,7 +15,6 @@
 .aboutLeft{
   flex-basis: 40%;
   position: relative;
-
 }
 .aboutRight{
   flex-basis: 56%;
@@ -52,6 +51,5 @@
   }
   .aboutRight{
     flex-basis: 100%;
-
   }
 }

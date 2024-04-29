@@ -23,7 +23,7 @@
 }
 .slider ul{
   display: flex;
-  width: 200%;
+  width: 300%; /****************Cart baraile komaile etao baraite komaite hobe***************** */
   overflow-x: hidden;
   transition: 0.5s;
   transform: translateX(-0%);
@@ -54,4 +54,60 @@
 }
 .userInfo h3{
   color: #212EA0;
+}
+
+@media (max-width: 800px) {
+  .testimonials{
+    padding: 0 40px;
+  }
+  .nextBtn, .backBtn{
+    padding: 10px;
+    width: 35px;
+  }
+  .testimonials ul li{
+    padding: 10px;
+  }
+  .slide{
+    padding: 10px;
+  }
+  .slide img{
+    width: 50px;
+    border: 3px solid #212EA0;
+  }
+}
+@media (max-width: 600px) {
+  .slider ul{
+    width: 600%; /****************Cart baraile komaile etao baraite komaite hobe***************** */
+  }
+  .slider ul li{
+    width: 50%;
+  }
+  .userInfo{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .userInfo h3{
+    font-size: 16px;
+  }
+  .slider p{
+    font-size: 12px;
+  }
+  .testimonials{
+    padding: 0 40px;
+  }
+  .nextBtn, .backBtn{
+    padding: 10px;
+    width: 35px;
+  }
+  .testimonials ul li{
+    padding: 10px;
+  }
+  .slide{
+    padding: 10px;
+  }
+  .slide img{
+    width: 50px;
+    border: 3px solid #212EA0;
+  }
 }
