@@ -31,6 +31,27 @@ const Programs = () => {
           <p>Graduation Degree</p>
         </div>
       </div>
+      <div className={styles.program}>
+        <img src={program1} alt="" />
+        <div className={styles.caption}>
+          <MdFoundation className={styles.icon}/>
+          <p>Graduation Degree</p>
+        </div>
+      </div>
+      <div className={styles.program}>
+        <img src={program2} alt="" />
+        <div className={styles.caption}>
+          <SiWikimediafoundation className={styles.icon}/>
+          <p>Graduation Degree</p>
+        </div>
+      </div>
+      <div className={styles.program}>
+        <img src={program3} alt="" />
+        <div className={styles.caption}>
+          <SiInteractiondesignfoundation className={styles.icon}/>
+          <p>Graduation Degree</p>
+        </div>
+      </div>
     </div>
   )
 }

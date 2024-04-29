@@ -11,8 +11,9 @@
   display: block;
 }
 .program{
-  flex-basis: 31%;
+  flex-basis: 32%;
   position: relative;
+  margin-top: 10px;
 }
 .icon{
   font-size: 30px;
@@ -45,6 +46,28 @@
 }
 
 
+/* @media (max-width: 640px) {
+  .program{
+    flex-basis: 49%;
+  }
+}
+@media (max-width: 440px) {
+  .program{
+    flex-basis: 95%;
+    margin: auto;
+    margin-top: 10px;
+  }
+} */
+
+@media ( max-width: 640px ) {
+  .programs{
+    flex-direction: column;
+  }
+  .program{
+    flex-basis: 100%;
+    margin: 20px;
+  }
+}
 
 
 
