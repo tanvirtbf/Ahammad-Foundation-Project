@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import Logo from "../../assets/unnamed.jpg";
 import styles from "./Navbar.module.css";
 import { RiMenu3Fill } from "react-icons/ri";
 
@@ -28,7 +27,6 @@ const Navbar = () => {
       <h1 className={styles.logoName}>
         <Link to="hero" smooth={true} offset={0} duration={500}>Ahammad Foundation</Link>
       </h1>
-      {/* <img src={Logo} alt="" className={styles.logo} /> */}
       <ul className={`${mobileMenu? styles.hideMobileMenuSmooth : styles.hideMobileMenu} `}>
         <li>
           <Link to="hero" smooth={true} offset={0} duration={500} onClick={handleNavbar}>

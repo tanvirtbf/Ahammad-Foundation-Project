@@ -11,10 +11,10 @@ const Hero = () => {
           Necessitatibus nam alias, dicta at iusto libero obcaecati suscipit
           vero excepturi ea quia voluptate dolorem quod itaque magnam? Harum
           possimus voluptatibus repudiandae qui pariatur distinctio. Libero,
-          perspiciatis? Nihil quas excepturi fugit laudantium dolores aliquid{" "}
+          perspiciatis? Nihil quas excepturi fugit laudantium dolores aliquid
         </p>
         <button className="btn">
-          Explore More <FaLongArrowAltRight />
+          Explore More <FaLongArrowAltRight className={styles.heroIcon}/>
         </button>
       </div>
     </div>

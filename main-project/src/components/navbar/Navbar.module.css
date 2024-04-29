@@ -44,7 +44,7 @@ nav ul li{
     margin: 10px 15px;
   }
 }
-@media (max-width: 840px){
+@media (max-width: 950px){
   nav{
     padding: 15px 0;
   }
